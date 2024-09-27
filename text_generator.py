@@ -1,3 +1,5 @@
+import streamlit as st
+
 def text_generator(text):
   for char in text:
     yield ord(char)
@@ -13,4 +15,4 @@ for char in my_generator:
   total_char.append(char)
 
 char_gabung = ''.join(str(x) for x in total_char)
-print(char_gabung)
+st.write(char_gabung)
