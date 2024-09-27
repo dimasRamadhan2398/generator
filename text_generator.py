@@ -17,5 +17,5 @@ for char in my_generator:
   total_char.append(char)
 
 char_gabung = ''.join(str(x) for x in total_char)
-st.buttton("Generate")
+st.button("Generate")
 st.write(char_gabung)
